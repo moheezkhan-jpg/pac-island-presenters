@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Product Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            background-color: #fff;
+            padding: 16px;
+        }
+        .features-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .features-list li:before {
+            content: '✓';
+            color: #10B981;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-12 p-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-teal-400 mb-2">Ajax Product Portfolio</h1>
+            <p class="text-lg sm:text-xl text-gray-400">A Detailed Catalog for Your Trade Presenter</p>
+        </header>
+
+        <div class="space-y-16">
+            
+            <!-- Product Section: Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes, Fresh Lemon -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h84/h56/15373321011230.jpg?response-content-disposition=inline;filename=COLG-8850006930335-1.jpg" alt="Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes, Bulk 110 Pack, Fresh Lemon" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006930335</p>
+                    <p class="mt-4 text-gray-300">Ajax Eco Multipurpose, Antibacterial Disinfectant cleaning wipes kill 99.9% of germs and cut through grease, grime and stains. Made from bamboo fibres, Ajax Eco wipes are 100% biodegradable and compostable. </p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>ANTIBACTERIAL DISINFECTANT SURFACE CLEANING WIPES: A household grade disinfectant wipe that kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>MULTIPURPOSE WIPES MAKE CLEANING A BREEZE: Suitable for use in the kitchen, bathroom and other surfaces</li>
+                            <li>100 PERCENT BIODEGRADABLE & COMPOSTABLE WIPES: Made from bamboo fibres our wipes are 100 percent biodegradable and compostable</li>
+                            <li>FRESH FRAGRANCE AND SHINE: Our wipes can be used on a variety of hard surfaces around the home leaving a fresh lemon scent and shine</li>
+                            <li>PACK SIZE: 110 Multi-purpose surface cleaning wipes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Section: Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes, Vanilla & Berries -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h50/h46/15373322190878.jpg?response-content-disposition=inline;filename=COLG-8850006930342-1.jpg" alt="Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes, Bulk 110 Pack, Vanilla & Berries" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Eco Antibacterial Disinfectant Surface Cleaning Wipes</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006930342</p>
+                    <p class="mt-4 text-gray-300">Ajax Eco Multipurpose, Antibacterial Disinfectant cleaning wipes kill 99.9% of germs and cut through grease, grime and stains. Made from bamboo fibres, Ajax Eco wipes are 100% biodegradable and compostable. </p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>ANTIBACTERIAL DISINFECTANT SURFACE CLEANING WIPES: A household grade disinfectant wipe that kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>MULTIPURPOSE WIPES MAKE CLEANING A BREEZE: Suitable for use in the kitchen, bathroom and other surfaces</li>
+                            <li>100 PERCENT BIODEGRADABLE & COMPOSTABLE WIPES: Made from bamboo fibres our wipes are 100 percent biodegradable and compostable</li>
+                            <li>FRESH FRAGRANCE AND SHINE: Our wipes can be used on a variety of hard surfaces around the home leaving a fresh vanilla berry scent and shine</li>
+                            <li>PACK SIZE: 110 Multi-purpose surface cleaning wipes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Eco Antibacterial Disinfectant Wipes, Bulk 2x110 Pack -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hd1/h58/15100390047774.jpg?response-content-disposition=inline;filename=COLG-8850006945056-1.jpg" alt="Ajax Eco Antibacterial Disinfectant Wipes, Bulk 2x110 Pack, Vanilla & Berries, Multipurpose, Biodegradable & Compostable" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Eco Antibacterial Disinfectant Wipes, Bulk 2x110 Pack</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006945056</p>
+                    <p class="mt-4 text-gray-300">Ajax Eco Multipurpose, Antibacterial Disinfectant cleaning wipes kill 99.9% of germs and cut through grease, grime and stains. Made from bamboo fibres, Ajax Eco wipes are 100% biodegradable and compostable.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>ANTIBACTERIAL DISINFECTANT SURFACE CLEANING WIPES: A household grade disinfectant wipe that kills 99.9 percent of germs and cuts through grease, grime and stains.</li>
+                            <li>MULTIPURPOSE WIPES MAKE CLEANING A BREEZE: Suitable for use in the kitchen, bathroom and other surfaces.</li>
+                            <li>100 PERCENT BIODEGRADABLE & COMPOSTABLE WIPES: Made from bamboo fibres our wipes are 100 percent biodegradable and compostable.</li>
+                            <li>FRESH FRAGRANCE AND SHINE: Our wipes can be used on a variety of hard surfaces around the home leaving a fresh vanilla berry scent and shine</li>
+                            <li>PACK SIZE: 2 x 110 Multi-purpose surface cleaning wipes so you don't run out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Section: Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner, Spring Botanicals -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h16/hd1/14187011047454.jpg?response-content-disposition=inline;filename=COLG-8850006945384-1.jpg" alt="Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner, 500mL, Spring Botanicals Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006945384</p>
+                    <p class="mt-4 text-gray-300">Ajax Hospital Grade Antibacterial Disinfectant is a Multi-Purpose Cleaner for easy grease and stain removal. Instantly cuts through more stains, dirt, grease and grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>HOSPITAL GRADE MULTIPURPOSE CLEANER: Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner is suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9 percent of germs and cuts through grease, grime, stains and soap scum</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean</li>
+                            <li>FRESH SCENT: Leaves behind a shine & fresh Spring Botanicals scent when you spray and wipe</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia with a 100 percent recyclable bottle and trigger (does not include sleeve)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner, Spring Botanicals (NZ) -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h6e/he7/12510332026910.jpg?response-content-disposition=inline;filename=COLG-8850006945384NZ-1.jpg" alt="Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner, 500mL, Spring Botanicals Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner (NZ)</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006945384NZ</p>
+                    <p class="mt-4 text-gray-300">Ajax Hospital Grade Antibacterial Disinfectant is a Multi-Purpose Cleaner for easy grease and stain removal. Instantly cuts through more stains, dirt, grease and grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>HOSPITAL GRADE MULTIPURPOSE CLEANER: Ajax Hospital Grade Antibacterial Disinfectant Multipurpose Cleaner is suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9 percent of germs and cuts through grease, grime, stains and soap scum</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean</li>
+                            <li>FRESH SCENT: Leaves behind a shine & fresh Spring Botanicals scent when you spray and wipe</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia with a 100 percent recyclable bottle and trigger (does not include sleeve)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Hospital Grade Disinfectant Cleaning Wipes, Green Tea & Jasmine -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hed/h71/15086486421534.jpg?response-content-disposition=inline;filename=COLG-8850006948279-1.jpg" alt="Ajax Hospital Grade Disinfectant Cleaning Wipes 110 Pack, Refreshing Green Tea & Jasmine" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Hospital Grade Disinfectant Cleaning Wipes</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006948279</p>
+                    <p class="mt-4 text-gray-300">Ajax Hospital Grade Disinfectant Cleaning Wipes Refreshing Green Tea & Jasmine is a hospital grade disinfectant multipurpose cleaner, using biodegradable fibres. It kills 99.9% of germs and cuts through grease & grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CLEANING WIPES: Ajax Hospital Grade Disinfectant Multipurpose cleaning wipes are suitable for cleaning most hard surfaces</li>
+                            <li>ANTIBACTERIAL WIPES: kill 99.9% of germs</li>
+                            <li>CUTS THROUGH GREASE: use us to clean kitchen, bathroom and other surfaces. Cuts through grease, grime and stains</li>
+                            <li>BIODEGRADABLE: Made with biodegradable fibres</li>
+                            <li>FRESHLY FRAGRANT: Leaves surfaces sparkling clean and freshly fragrant with notes of refreshing green tea & jasmine</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Hospital Grade Disinfectant Multipurpose Cleaning Wipes, Sparkling Citrus & Pineapple -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h79/h4d/15086463811614.jpg?response-content-disposition=inline;filename=COLG-8850006948286-1.jpg" alt="Ajax Hospital Grade Disinfectant Multipurpose Cleaning Wipes, 110 Pack, Sparkling Citrus & Pineapple" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Hospital Grade Disinfectant Multipurpose Cleaning Wipes</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006948286</p>
+                    <p class="mt-4 text-gray-300">Ajax Hospital Grade Disinfectant Multipurpose Cleaning Wipes Sparkling Citrus & Pineapple kills 99.9% of germs. Cuts through grease & grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CLEANING WIPES: Ajax Hospital Grade Disinfectant Multipurpose cleaning wipes are suitable for cleaning most hard surfaces</li>
+                            <li>ANTIBACTERIAL WIPES: kill 99.9% of germs</li>
+                            <li>CUTS THROUGH GREASE: use us to clean kitchen, bathroom and other surfaces. Cuts through grease, grime and stains</li>
+                            <li>BIODEGRADABLE: Made with biodegradable fibres</li>
+                            <li>FRESHLY FRAGRANT: Leaves surfaces sparkling clean and freshly fragrant with notes of sparkling citrus and pineapple</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Eco Multipurpose Disinfectant Wipes Sensitive 110 Pack -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h30/hca/13115243364382.jpg?response-content-disposition=inline;filename=COLG-8850006948293-1.jpg" alt="Ajax Eco Multipurpose Disinfectant Wipes Sensitive 110 Pack" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Eco Multipurpose Disinfectant Wipes Sensitive</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006948293</p>
+                    <p class="mt-4 text-gray-300">Ajax Eco Multipurpose Disinfectant Wipes Sensitive are 100% biodegradable & compostable wipes that cut through grease & grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>SENSITIVE CLEANING WIPES: Ajax Eco Sensitive Multipurpose wipes are dermatologically tested</li>
+                            <li>MULTIPURPOSE WIPES: suitable to clean most hard surfaces, use us to clean kitchen, bathroom and other surfaces</li>
+                            <li>ANTIBACTERIAL WIPES: kill 99.9% of germs</li>
+                            <li>CUTS THROUGH GREASE: use us to clean kitchen, bathroom and other surfaces. Cuts through grease, grime and stains</li>
+                            <li>BIODEGRADABLE: 100% biodegradable and compostable wipes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Luxury Home Multipurpose Cleaning Wipes, Crisp Lime & Sandalwood -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/he0/hff/14998273523742.jpg?response-content-disposition=inline;filename=COLG-8850006949405-1.jpg" alt="Ajax Luxury Home Multipurpose Cleaning Wipes 110 Pack, Crisp Lime & Sandalwood" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Luxury Home Multipurpose Cleaning Wipes</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006949405</p>
+                    <p class="mt-4 text-gray-300">Ajax Luxury Home Multipurpose Cleaning Wipes Crisp Lime & Sandalwood kills 99.9% of germs, eliminates odours and has an air freshener effect.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CLEANING WIPES: Ajax Luxury Home Multipurpose disinfectant cleaning wipes are suitable for cleaning most hard surfaces</li>
+                            <li>CUTS THROUGH GREASE: use us to clean kitchen, bathroom and other surfaces. Cuts through grease, grime and stains</li>
+                            <li>CUTS THROUGH GREASE: use us to clean kitchen, bathroom and other surfaces. Cuts through grease, grime and stains</li>
+                            <li>BIODEGRADABLE: Made with biodegradable fibres</li>
+                            <li>AIR FRESHENER EFFECT: eliminates odours and leaves a scent of crisp lime and sandalwood</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, 3 Pack -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hb1/h94/14965877440542.jpg?response-content-disposition=inline;filename=COLG-8850006951248-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, 3 Pack x 475mL, Vanilla & Berries Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, 3 Pack</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006951248</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Vanilla & Berries Kitchen & Bathroom is a Multi-Purpose Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Vanilla and Berries cleaner cuts through grease, grime and stains and is a trigger spray suitable for multi surfaces</li>
+                            <li>FRESHNESS BOOSTERS: With added freshness boosters in a vanilla & berries scent to have your home smelling and feeling fresh and clean</li>
+                            <li>TO USE: Simply spray the surface and wipe it off with a damp cloth. No need to scrub or rinse</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multipurpose Cleaner Refill, Vanilla & Berries -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hff/h4b/14132447576094.jpg?response-content-disposition=inline;filename=COLG-8850006951828-1.jpg" alt="Ajax Spray n' Wipe Multipurpose Cleaner Refill, Vanilla & Berries, 750ml, Trigger Surface Refill " class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multipurpose Cleaner Refill</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006951828</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Multipurpose Cleaner cuts through grease, grime and stains, whilst killing 99.9% of germs and boosting freshness; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CUTS THROUGH GREASE AND GRIME: Simply spray and wipe our household grade disinfectant</li>
+                            <li>FRESHNESS BOOSTERS: With added freshness boosters in a vanilla & berries scent to have your home smelling and feeling fresh and clean</li>
+                            <li>KILLS 99.9% OF GERMS: Antibacterial wipes that kill germs such as Salmonella, E.Coli and Staphylococcus</li>
+                            <li>100% RECYCLED & RECYCLABLE BOTTLE*: Our bottle is made from 100% recycled plastic and is recyclable. *Does not include cap</li>
+                            <li>Value Refill^: Get more product with less plastic ^vs RRP Ajax SnW 500mL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Concentrated Multipurpose Cleaner, Lemon Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h0b/h93/14132479426590.jpg?response-content-disposition=inline;filename=COLG-8850006951842-1.jpg" alt="Ajax Spray n' Wipe Concentrated Multipurpose Cleaner, Lemon Citrus, 500mL, Dilute at home " class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Concentrated Multipurpose Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006951842</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Concentrate is a dilutable multipurpose cleaner that uses 78% less plastic and kills 99.9% of germs; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>DILUTE AT HOME MULTIPURPOSE CLEANER: Either dilute with water for a multipurpose cleaner or use undiluted for a disinfectant cleaner</li>
+                            <li>78% LESS PLASTIC^: Reuse your old trigger bottles when diluting to save plastic ^vs Ajax SnW 500mL bottle when diluted</li>
+                            <li>KILLS 99.9% OF GERMS: Antibacterial wipes that kill germs such as Salmonella, E.Coli and Staphylococcus</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                            <li>100% RECYCLED & RECYCLABLE BOTTLE*: Our bottle is made from 100% recycled plastic and is recyclable. *Does not include cap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Floor Cleaner Multi-Surface Disinfectant Wipes Tropical Breeze -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/he9/h48/14463197315102.jpg?response-content-disposition=inline;filename=COLG-8850006951859-1.jpg" alt="Ajax Floor Cleaner Multi-Surface Disinfectant Wipes Tropical Breeze" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Floor Cleaner Multi-Surface Disinfectant Wipes Tropical Breeze</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006951859</p>
+                    <p class="mt-4 text-gray-300">Ajax Floor Cleaner Multi-Surface Disinfectant Wipes Tropical Breeze is biodegradable (does not include packaging). Kills 99.9% of germs. Extra large wipes (vs. Ajax Eco wipes).</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTI-SURFACE: Use us to clean glazed tiles, sealed wooden floors, vinyl and sealed laminated floors</li>
+                            <li>HOUSEHOLD GRADE DISINFECTANT: Cuts through grease, grime and stains</li>
+                            <li>EXTRA LARGE WIPES: To be used to clean large areas with a cleaning system or by broom/mop/hand</li>
+                            <li>KILLS 99.9% OF GERMS: Antibacterial wipes that kill germs such as Salmonella, E.Coli and Staphylococcus</li>
+                            <li>MADE FROM BIODEGRADABLE FIBRES: Viscose biodegradable fibres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multipurpose Cleaner Trigger Surface Refill Value Pack, Vanilla & Berries -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hbc/h1c/14187071635486.jpg?response-content-disposition=inline;filename=COLG-8850006952191-1.jpg" alt="Ajax Spray n' Wipe Multipurpose Cleaner Trigger Surface Refill Value Pack Vanilla & Berries 5L" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multipurpose Cleaner Refill Value Pack</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006952191</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Multipurpose Cleaner Trigger Surface Refill Value Pack (vs RRP Ajax SnW 500mL) Vanilla & Berries kills 99.9% of germs. Cuts through grease and grime. Surface spray disinfectant - household grade. </p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CUTS THROUGH GREASE AND GRIME: Simply spray and wipe our household grade disinfectant</li>
+                            <li>FRESHNESS BOOSTERS: With added freshness boosters in a vanilla & berries scent to have your home smelling and feeling fresh and clean</li>
+                            <li>KILLS 99.9% OF GERMS: Antibacterial wipes that kill germs such as Salmonella, E.Coli and Staphylococcus</li>
+                            <li>100% RECYCLABLE BOTTLE*: Our bottle is 100% recyclable. *Does not include cap</li>
+                            <li>Value Refill^: Get more product with less plastic ^vs RRP Ajax SnW 500mL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Antiviral, Hospital Grade Disinfectant. Multipurpose Cleaning Spray, Lemon Cleanse -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h49/hff/14881593360414.jpg?response-content-disposition=inline;filename=COLG-8850006955734-1.jpg" alt="Ajax Antiviral, Hospital Grade Disinfectant. Multipurpose Cleaning Spray, 750mL, Lemon Cleanse" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Antiviral, Hospital Grade Disinfectant. Multipurpose Cleaning Spray</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006955734</p>
+                    <p class="mt-4 text-gray-300">Ajax Antiviral Hospital Grade Disinfectant is a Multi-Purpose Cleaner for easy grease and stain removal. Instantly cuts through more stains, dirt, grease and grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>HOSPITAL GRADE MULTIPURPOSE CLEANER: Ajax Antiviral Hospital Grade Disinfectant Multipurpose Cleaner is suitable for multiple surfaces.</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9 percent of germs including COVID-19 and cuts through grease, grime, stains and soap scum.</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean.</li>
+                            <li>FRESH SCENT: Leaves behind a shine & great fresh Lemon fragrance when you spray and wipe.</li>
+                            <li>AUSTRALIAN MADE: Bottle made with 100% recycled plastic (does not include trigger and sleeve).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Antiviral, Hospital Grade Disinfectant, Multipurpose Cleaner, Spring Botanicals -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h74/haf/14881645789214.jpg?response-content-disposition=inline;filename=COLG-8850006955741-1.jpg" alt="Ajax Antiviral, Hospital Grade Disinfectant, Multipurpose Cleaner, 750mL, Spring Botanicals Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Antiviral, Hospital Grade Disinfectant, Multipurpose Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006955741</p>
+                    <p class="mt-4 text-gray-300">Ajax Hospital Grade Antibacterial Disinfectant is a Multi-Purpose Cleaner for easy grease and stain removal. Instantly cuts through more stains, dirt, grease and grime.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>HOSPITAL GRADE MULTIPURPOSE CLEANER: Ajax Antiviral Hospital Grade Disinfectant Multipurpose Cleaner is suitable for multiple surfaces.</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9 percent of germs including COVID-19 and cuts through grease, grime, stains and soap scum.</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean.</li>
+                            <li>FRESH SCENT: Leaves behind a shine & fresh spring botanicals scent when you spray and wipe.</li>
+                            <li>AUSTRALIAN MADE: Bottle made with 100% recycled plastic (does not include trigger and sleeve).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Luxury Home Multipurpose Cleaning Spray, Sandalwood & Crushed Lime -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h80/hac/14881435451422.jpg?response-content-disposition=inline;filename=COLG-8850006955758-1.jpg" alt="Ajax Luxury Home Multipurpose Cleaning Spray, 750mL, Sandalwood & Crushed Lime" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Luxury Home Multipurpose Cleaning Spray</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006955758</p>
+                    <p class="mt-4 text-gray-300">Ajax Luxury Home Sandalwood & Crushed Lime is a multipurpose cleaner that cleans your home, cutting through grease and grime. Infused with essential oils & fine fragrance, it brings a touch of luxury to your home cleaning. </p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Luxury Home Multipurpose Cleaner Sandalwood & Crushed Lime is a trigger spray suitable for multiple surfaces.</li>
+                            <li>FINE FRAGRANCE LASTS HOURS: Sandalwood & crushed lime scent designed by expert perfumers and infused with essential oils.</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9% of germs</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean.</li>
+                            <li>AUSTRALIAN MADE: Bottle made with 100% recycled plastic (does not include trigger and sleeve).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Luxury Home, Multipurpose Cleaning Spray, Smooth Vanilla & Bergamot -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hce/hdf/14881608237086.jpg?response-content-disposition=inline;filename=COLG-8850006955765-1.jpg" alt="Ajax, Luxury Home, Multipurpose Cleaning Spray, 750mL, Smooth Vanilla & Bergamot" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax, Luxury Home, Multipurpose Cleaning Spray</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_8850006955765</p>
+                    <p class="mt-4 text-gray-300">Ajax Luxury Home Smooth Vanilla & Bergamot is a multipurpose cleaner that cleans your home, cutting through grease and grime. Infused with essential oils & fine fragrance, it brings a touch of luxury to your home cleaning. </p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Luxury Home Multipurpose Cleaner Smooth Vanilla & Bergamot is a trigger spray suitable for multiple surfaces.</li>
+                            <li>FINE FRAGRANCE LASTS HOURS: Smooth Vanilla & Bergamot scent designed by expert perfumers and infused with essential oils.</li>
+                            <li>ANTIBACTERIAL CLEANER: Kills 99.9% of germs</li>
+                            <li>DISINFECTANT CLEANER: To disinfect surfaces, thoroughly wet your non-porous surface, wait 10 minutes then wipe clean.</li>
+                            <li>AUSTRALIAN MADE: Bottle made with 100% recycled plastic (does not include trigger and sleeve).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Cream Cleanser, Lemon -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/ha6/hac/15373324156958.jpg?response-content-disposition=inline;filename=COLG-9300632002481-1.jpg" alt="Ajax Cream Cleanser, 375mL, Lemon, Kitchen and Bathroom Cleaner, Tough on Grime" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Cream Cleanser</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632002481</p>
+                    <p class="mt-4 text-gray-300">Ajax Cream Cleanser Household Cleaner Lemon is tough on grime with no harsh scratching and an easy rinse formula.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CREAM CLEANSER: Ajax cream cleanser lemon can be used to clean dirt and grime from areas in your home</li>
+                            <li>EASY RINSE FORMULA: Tough on grime and no harsh scratching</li>
+                            <li>USE WITH CONFIDENCE: on bathroom & kitchen surfaces Bathroom: Baths and basins (vitreous china and enamel), shower recesses, all tiled surfaces, taps and fixtures (chrome, stainless steel and enamel) Kitchen: Sinks, taps (stainless steel and enamel), kitchen benches (laminated), tiled surfaces, stainless steel pots and pans, stoves, fridges and ovens</li>
+                            <li>BIODEGRADABLE: Made with a fresh lemon scent and readily biodegradable surfactants</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Multi Surface Floor Cleaner, 5L Value Refill Pack -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h29/hf9/14965870428190.jpg?response-content-disposition=inline;filename=COLG-9300632002580-1.jpg" alt="Ajax Multi Surface Floor Cleaner, 5L Value Refill Pack, Lemon Citrus, Floorboard Safe" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Multi Surface Floor Cleaner, 5L Value Refill Pack</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632002580</p>
+                    <p class="mt-4 text-gray-300">Ajax Lemon Citrus Floor Cleaner is a Household Grade, Multi-Surface Floor Cleaner for Stone, Slate, Tiles, Varnished Wooden Floorboards that Removes Dirt & Grime. The floor cleaner is made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>FLOOR CLEANER: Ajax Lemon Floor Cleaner has been developed to clean the floors in your homes and leave them with a shine</li>
+                            <li>SCENT: Enjoy the lemon scent to remove grease and grime</li>
+                            <li>USE WITH CONFIDENCE: On slate, tiles, varnished wooden floorboards and other hard washable surfaces</li>
+                            <li>BIODEGRADABILITY: The surfactants in Ajax Floor Cleaner are readily biodegradable according to the Australian standard AS 4351 part 2</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Kitchen Cleaner Trigger, Baking Soda & Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/ha0/h14/14226209603614.jpg?response-content-disposition=inline;filename=COLG-9300632060252-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Kitchen Cleaner Trigger, 500mL, Baking Soda & Citrus Surface Spray, Stone Safe" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Kitchen Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632060252</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Baking Soda & Citrus is a Multi-Purpose Kitchen Cleaner Trigger Surface Spray that is Stone Safe; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE KITCHEN CLEANER: Ajax Spray n' Wipe Kitchen Baking Soda and Citrus cleaner is a trigger spray suitable for multi surfaces in the kitchen</li>
+                            <li>STONE & MARBLE SAFE: formula can be used on stone and marble benchtops and cuts through grease, grime and stains</li>
+                            <li>TO USE: Simply spray the surface and wipe it off with a damp cloth. No need to scrub or rinse</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Multi Surface Floor Cleaner, Baking Soda and Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h06/h12/14187055972382.jpg?response-content-disposition=inline;filename=COLG-9300632062942-1.jpg" alt="Ajax Multi Surface Floor Cleaner, 750mL, Baking Soda and Citrus, Stone Safe, Removes Grease and Grime" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Multi Surface Floor Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632062942</p>
+                    <p class="mt-4 text-gray-300">Ajax Floor Cleaner Baking Soda is stone safe and removes grease and grime. Now in a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTISURFACE FLOOR CLEANER: Ajax Multi Surface Baking Soda and Citrus floor cleaner has been specially developed to clean your stone floor surfaces</li>
+                            <li>SCENT: Enjoy the citrus scent with baking soda to remove grease and grime</li>
+                            <li>USE WITH CONFIDENCE: Suitable for Linoleum, vinyl, ceramic tiles, varnished wood floor boards and other hard washable surfaces, quarry tiles and slate.</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Lavender & Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hbc/h71/14187005739038.jpg?response-content-disposition=inline;filename=COLG-9300632064137-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Antibacterial Disinfectant, 500mL, Lavender & Citrus" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632064137</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Lavender & Citrus is a Multi-Purpose Antibacterial Disinfectant Household Grade Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Lavender and Citrus cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>FRESH SCENT: Enjoy the fresh scent of Lavender and Citrus when you spray and wipe</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Professional Bathroom Disinfectant Cleaning Spray -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h99/h6f/14293464514590.jpg?response-content-disposition=inline;filename=COLG-9300632064168-1.jpg" alt="Ajax Professional Bathroom Disinfectant Cleaning Spray, 500mL" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Professional Bathroom Disinfectant Cleaning Spray</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632064168</p>
+                    <p class="mt-4 text-gray-300">Ajax Professional Bathroom Cleaner is a Disinfectant Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>DISINFECTANT CLEANER: Ajax Professional Bathroom powers through tough soap scum, rust stains and grime.</li>
+                            <li>UPSIDE DOWN FOAM TRIGGER: Works upside down allowing you to target those hard to reach areas with minimal fuss</li>
+                            <li>SUITABLE FOR: showers, baths, wash basins, toilets, shower cubicles made from ceramic tiles, glass or plastic, splash backs, glazed tiles, stainless steel, chrome, taps, ceramic floor and wall tiles.</li>
+                            <li>100% RECYCLED & RECYCLABLE BOTTLE: Our bottle is made from 100% recycled plastic and is recyclable. Does not include trigger and sleeve.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Triple Action Glass Cleaner Trigger -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/ha5/h19/14187018944542.jpg?response-content-disposition=inline;filename=COLG-9300632065158-1.jpg" alt="Ajax Spray n' Wipe Triple Action Glass Cleaner Trigger, 500mL" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Triple Action Glass Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632065158</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Glass Cleaner is a Triple Action, Anti Streak, Anti Fog, Anti Scratch Trigger Spray; Ammonia Free and Made in Australia.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>GLASS CLEANER: Ajax Spray n' Wipe Glass Cleaner Spray cleans without streaking and dries quickly, keeping your glass shiny and clear for longer</li>
+                            <li>TRIPLE ACTION FORMULA: Anti Streak, Anti Fog and Anti Scratch Ammonia free</li>
+                            <li>STREAK FREE SHINE: Outstanding Streak Free Shine Simply spray the surface, then wipe clean</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Apple Blossom & Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hde/h1c/14187036147742.jpg?response-content-disposition=inline;filename=COLG-9300632070060-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Antibacterial Disinfectant, 500mL, Apple Blossom & Citrus" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632070060</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Antibacterial Disinfectant Cleaner Trigger is a Multi-Purpose, Household Grade, Apple & Citrus Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Apple Blossom and Citrus cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>FRUITY SCENT: Enjoy the fruity scent of Apple Blossom and Citrus when you spray and wipe</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Powder Cleanser Disinfectant, Lemon -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h37/hd1/14824502558750.jpg?response-content-disposition=inline;filename=COLG-9300632072453-1.jpg" alt="Ajax Powder Cleanser Disinfectant, 500g, Lemon" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Powder Cleanser Disinfectant</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632072453</p>
+                    <p class="mt-4 text-gray-300">Ajax Powder Cleanser is a Lemon, Household Grade Disinfectant</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>POWDER CLEANSER: Ajax Powder cleanser lemon is tough on grime</li>
+                            <li>DISINFECTANT CLEANER: Ajax Powder cleanser is a disinfectant cleaner</li>
+                            <li>USE ON: Porcelain, enamel and non-porous tiles</li>
+                            <li>FRESH SCENT: enjoy a fresh lemon scent</li>
+                            <li>HOUSEHOLD CLEANER: A household grade cleaner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Ocean Fresh -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h8c/h32/14187068162078.jpg?response-content-disposition=inline;filename=COLG-9300632074099-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Antibacterial Disinfectant, 500mL, Ocean Fresh" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632074099</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Ocean Fresh is a Multi-Purpose Antibacterial Disinfectant Household Grade Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Ocean Fresh cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>FRESH SCENT: Enjoy the Fresh Ocean Scent when you spray and wipe</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Lemon Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h23/h8d/14186985586718.jpg?response-content-disposition=inline;filename=COLG-9300632074112-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Antibacterial Disinfectant, 500mL, Lemon Citrus" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632074112</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Lemon Citrus is a Multi-Purpose Antibacterial Disinfectant Household Grade Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Lemon cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>FRESH SCENT: Enjoy the fresh scent of Lemon Citrus when you spray and wipe</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Refill, Lemon Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h8f/h83/14187033657374.jpg?response-content-disposition=inline;filename=COLG-9300632074129-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Refill, Value Pack 750mL, Lemon Citrus, Antibacterial Disinfectant" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Refill</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632074129</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Lemon Citrus Value Pack Refill is a Multi-Purpose Antibacterial Disinfectant Household Grade Cleaner; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Lemon cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>REFILL VALUE PACK: 750mL Refill Value Pack with Lemon Citrus Fragrance. (Vs RRP Ajax SnW 500mL)</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Refill, Lavender & Citrus -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/ha2/h77/14187037458462.jpg?response-content-disposition=inline;filename=COLG-9300632074143-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Refill, Value Pack 750mL, Lavender & Citrus" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Refill</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632074143</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Lavender & Citrus Refill is a Multi-Purpose Antibacterial Disinfectant Household Grade Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Lavender and Citrus cleaner is a trigger spray suitable for multi surfaces</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through grease, grime and stains</li>
+                            <li>REFILL VALUE PACK: 750mL Refill Value Pack with Lavender & Citrus Fragrance. (Vs RRP Ajax SnW 500mL)</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Bathroom Antibacterial Disinfectant Cleaner Trigger, Fresh Burst -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hdc/hb5/14964150272030.jpg?response-content-disposition=inline;filename=COLG-9300632074174-1.jpg" alt="Ajax Spray n' Wipe Bathroom Antibacterial Disinfectant Cleaner Trigger, 500mL, Fresh Burst Surface Spray, Soap Scum Remover" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Bathroom Antibacterial Disinfectant Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632074174</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Bathroom is a Household Grade Antibacterial Disinfectant Cleaner Trigger Surface Spray; Soap Scum Remover, made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE BATHROOM CLEANER: Ajax Spray n' Wipe Bathroom cleaner is a trigger spray suitable for multi surfaces in the bathroom</li>
+                            <li>ANTIBACTERIAL DISINFECTANT: Kills 99.9 percent of germs and cuts through soap scum, dirt and grime</li>
+                            <li>FRESH SCENT: Enjoy the fresh scent when you spray and wipe</li>
+                            <li>RECYCLABLE: 100 percent recycled and recyclable bottle. Does not include Trigger.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Professional Kitchen Power Degreaser Cleaner -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h1d/h93/14293446197278.jpg?response-content-disposition=inline;filename=COLG-9300632084203-1.jpg" alt="Ajax Professional Kitchen Power Degreaser Cleaner, 500mL, Trigger Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Professional Kitchen Power Degreaser Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632084203</p>
+                    <p class="mt-4 text-gray-300">Ajax Professional Kitchen Cleaner is a Power Degreaser Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>EXPERT ON BAKED ON GREASE: Ajax Professional Kitchen has a fast acting formula that dissolves tough baked on grease</li>
+                            <li>POWER DEGREASER: Cuts through dirt and grime</li>
+                            <li>UPSIDE DOWN FOAM TRIGGER: Works upside down allowing you to target those hard to reach areas with minimal fuss</li>
+                            <li>100% RECYCLED & RECYCLABLE BOTTLE: Our bottle is made from 100% recycled plastic and is recyclable. Does not include trigger and sleeve.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Professional Mould Remover Cleaning Spray, Low Fumes -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/hb2/h1a/14694087557150.jpg?response-content-disposition=inline;filename=COLG-9300632085057-1.jpg" alt="Ajax Professional Mould Remover Cleaning Spray, 500mL, Low Fumes" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Professional Mould Remover Cleaning Spray</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632085057</p>
+                    <p class="mt-4 text-gray-300">Ajax Professional Mould is a Household Grade, Low Fumes, Mould Remover Cleaner Trigger Surface Spray; Made in Australia.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MOULD REMOVER: Ajax Professional Mould Cleaner effectively and rapidly kills mould in seconds</li>
+                            <li>UPSIDE DOWN POWER FOAM TRIGGER: works upside down allowing you to target those hard to reach areas with minimal fuss to make cleaning quicker and easier</li>
+                            <li>REMOVES SOAP SCUM, GERMS AND GRIME: high tech formula removes soap scum, germs and grime</li>
+                            <li>FAST ACTING FORMULA: Spray affected area and rinse clean after a few minutes.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Multi Surface Floor Cleaner, Tropical Breeze -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h0b/ha6/14187048304670.jpg?response-content-disposition=inline;filename=COLG-9300632087853-1.jpg" alt="Ajax Multi Surface Floor Cleaner, 750mL, Tropical Breeze, Long Lasting Fragrance" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Multi Surface Floor Cleaner</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632087853</p>
+                    <p class="mt-4 text-gray-300">Ajax Tropical Breeze Floor Cleaner is a Household Grade, Multi-Surface Floor Cleaner for Slate, Tiles, Varnished Wooden Floorboards; A Long Lasting Fragrance Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTISURFACE FLOOR CLEANER: Ajax Multi Surface Tropical Breeze floor cleaner has been specially developed to clean your floor surfaces</li>
+                            <li>LONG LASTING FRAGRANCE: Contains freshness boosters for a long lasting tropical breeze fragrance</li>
+                            <li>USE WITH CONFIDENCE: on slate, tiles, varnished wooden floorboards and other hard washable surfaces</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content.</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, Vanilla & Berries -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/h60/h95/14187051548702.jpg?response-content-disposition=inline;filename=COLG-9300632088805-1.jpg" alt="Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger, 475mL, Vanilla & Berries Surface Spray" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Spray n' Wipe Multi-Purpose Cleaner Trigger</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9300632088805</p>
+                    <p class="mt-4 text-gray-300">Ajax Spray n' Wipe Vanilla & Berries Kitchen & Bathroom is a Multi-Purpose Cleaner Trigger Surface Spray; Made in Australia with a 100% recycled bottle.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>MULTIPURPOSE CLEANER: Ajax Spray n' Wipe Vanilla and Berries cleaner cuts through grease, grime and stains and is a trigger spray suitable for multi surfaces</li>
+                            <li>FRESHNESS BOOSTERS: With added freshness boosters in a vanilla & berries scent to have your home smelling and feeling fresh and clean</li>
+                            <li>TO USE: Simply spray the surface and wipe it off with a damp cloth. No need to scrub or rinse</li>
+                            <li>RECYCLABLE: Bottle made from 100% recycled content. Does not include trigger</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Section: Ajax Cream Cleanser, Baking Soda and Citrus Extracts -->
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col lg:flex-row items-center lg:items-start gap-8">
+                <div class="w-full lg:w-1/3 flex-shrink-0">
+                    <img src="https://images.skulibrary.com/media/sys_master/he8/he5/15373325598750.jpg?response-content-disposition=inline;filename=COLG-9400541001220-1.jpg" alt="Ajax Cream Cleanser, 375mL, Baking Soda and Citrus Extracts, Kitchen and Bathroom Cleaner, Tough on Grime" class="product-image rounded-xl shadow-lg border-2 border-gray-700">
+                </div>
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-white">Ajax Cream Cleanser</h2>
+                    <p class="text-sm text-gray-400 mt-1">SKU: COLG_9400541001220</p>
+                    <p class="mt-4 text-gray-300">Ajax Cream Cleanser Household Cleaner Baking Soda with Citrus extracts is tough on grime with no harsh scratching and an easy rinse formula.</p>
+                    
+                    <div class="mt-6 bg-gray-700 p-6 rounded-lg space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">FEATURES & BENEFITS</p>
+                        <ul class="features-list space-y-2 text-gray-200">
+                            <li>CREAM CLEANSER: Ajax cream cleanser baking soda can be used to clean dirt and grime from areas in your home</li>
+                            <li>EASY RINSE FORMULA: Tough on grime and no harsh scratching</li>
+                            <li>USE WITH CONFIDENCE: on bathroom & kitchen surfaces Bathroom: Baths and basins (vitreous china and enamel), shower recesses, all tiled surfaces, taps and fixtures (chrome, stainless steel and enamel) Kitchen: Sinks, taps (stainless steel and enamel), kitchen benches (laminated), tiled surfaces, stainless steel pots and pans, stoves, fridges and ovens</li>
+                            <li>BIODEGRADABLE: Made with baking soda with citrus extracts and readily biodegradable surfactants</li>
+                            <li>AUSTRALIAN MADE: Proudly made in Australia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
