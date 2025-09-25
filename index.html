@@ -2191,53 +2191,54 @@
                 const productGrid = brandSection.querySelector('div');
 
                 groupedByBrand[brand].forEach(product => {
-                    const features = [];
-                    for (let i = 1; i <= 5; i++) {
-                        const featureKey = `Features&Benefits${i}`;
-                        if (product[featureKey]) {
-                            // Extract the text after the colon, if it exists
-                            const featureText = product[featureKey].split(':').pop().trim();
-                            features.push(featureText);
-                        }
-                    }
+    const features = [];
+    for (let i = 1; i <= 5; i++) {
+        const featureKey = `Features&Benefits${i}`;
+        if (product[featureKey]) {
+            // Extract the text after the colon, if it exists
+            const featureText = product[featureKey].split(':').pop().trim();
+            features.push(featureText);
+        }
+    }
 
-                    const productCard = document.createElement('div');
-                    productCard.className = 'bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col';
-                    
-                    productCard.innerHTML = `
-                        <div class="w-full h-48 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
-                            <img src="${product['Slot 1']}" alt="${product.Name}" class="w-full h-full object-contain">
-                        </div>
-                        <h3 class="text-2xl font-semibold mt-4 text-gray-900">${product.Name}</h3>
-                        <p class="text-sm text-gray-500 mb-2">SKU: ${product.EAN}</p>
-                        <p class="text-sm text-gray-500 mb-4">${product.ShortCopy}</p>
+    // Correctly generate the list items HTML
+    const featuresHtml = features.map(f => `<li>${f}</li>`).join('');
 
-                        <div class="space-y-3 mb-4 flex-grow">
-                            <div>
-                                <h4 class="text-lg font-medium text-gray-700">Features & Benefits</h4>
-                                <ul class="list-disc list-inside text-gray-600">
-                                    ${features.map(f => `<li>${f}</li>`).join('')}
-                                </ul>
-                            </div>
-                        </div>
+    const productCard = document.createElement('div');
+    productCard.className = 'bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col';
+    
+    productCard.innerHTML = `
+        <div class="w-full h-48 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+            <img src="${product['Slot 1']}" alt="${product.Name}" class="w-full h-full object-contain">
+        </div>
+        <h3 class="text-2xl font-semibold mt-4 text-gray-900">${product.Name}</h3>
+        <p class="text-sm text-gray-500 mb-2">SKU: ${product.EAN}</p>
+        <p class="text-sm text-gray-500 mb-4">${product.ShortCopy}</p>
 
-                        <div class="mt-auto pt-4 border-t border-gray-200">
-                            <p class="text-sm text-gray-600"><span class="font-semibold">Opening Type:</span> ${product.OpeningType || 'N/A'}</p>
-                            <p class="text-sm text-gray-600"><span class="font-semibold">Packaging:</span> ${product.ProductPackaging || 'N/A'}</p>
-                            <p class="text-sm text-gray-600"><span class="font-semibold">Dimensions:</span> H: ${product['Height (Master Data)']}${product['Height UOM (Master Data)'] || ''}, W: ${product['Width (Master Data)']}${product['Width UOM (Master Data)'] || ''}, D: ${product['Depth (Master Data)']}${product['Depth UOM (Master Data)'] || ''}</p>
-                            <p class="text-sm text-gray-600"><span class="font-semibold">Weight:</span> ${product['Gross Weight (Master Data)']} ${product['Gross Weight UOM (Master Data)'] || ''}</p>
-                        </div>
-                    `;
-                    productGrid.appendChild(productCard);
-                });
+        <div class="space-y-3 mb-4 flex-grow">
+            <div>
+                <h4 class="text-lg font-medium text-gray-700">Features & Benefits</h4>
+                <ul class="list-disc list-inside text-gray-600">
+                    ${featuresHtml}  // Use the pre-generated HTML string here
+                </ul>
+            </div>
+        </div>
 
-                container.appendChild(brandSection);
-            }
-        });
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <p class="text-sm text-gray-600"><span class="font-semibold">Opening Type:</span> ${product.OpeningType || 'N/A'}</p>
+            <p class="text-sm text-gray-600"><span class="font-semibold">Packaging:</span> ${product.ProductPackaging || 'N/A'}</p>
+            <p class="text-sm text-gray-600"><span class="font-semibold">Dimensions:</span> H: ${product['Height (Master Data)']}${product['Height UOM (Master Data)'] || ''}, W: ${product['Width (Master Data)']}${product['Width UOM (Master Data)'] || ''}, D: ${product['Depth (Master Data)']}${product['Depth UOM (Master Data)'] || ''}</p>
+            <p class="text-sm text-gray-600"><span class="font-semibold">Weight:</span> ${product['Gross Weight (Master Data)']} ${product['Gross Weight UOM (Master Data)'] || ''}</p>
+        </div>
+    `;
+    productGrid.appendChild(productCard);
+});
+
     </script>
 
 </body>
 </html>
+
 
 
 
